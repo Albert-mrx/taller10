@@ -2,7 +2,7 @@ main{
   height: 80vh;
   display: flex;
   gap: 60px;
-  padding: 10% 2% 0% 30%;
+  padding: 6% 2% 0% 30%;
   background: rgb(39, 38, 38);
   color: aliceblue;
 }
