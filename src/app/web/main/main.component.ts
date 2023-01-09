@@ -10,6 +10,14 @@ export class MainComponent implements OnInit {
   tarea:string="";
   descripcion:string ="";
   error:string = "complete los campos por favor";
+  valor:any=true;
+  habilitar(){
+    if(this.tarea =="" || this.descripcion ==""){
+      return this.valor = true;
+    }else{
+      return this.valor = false;
+    }
+  }
   Agregar(){
     if(this.tarea !=="" && this.descripcion !== ""){
           this.lista.push({'tarea':this.tarea,'descripcion':this.descripcion});

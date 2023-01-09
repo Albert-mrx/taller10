@@ -18,7 +18,7 @@
       <ul *ngFor="let fila of lista; let i = index in lista">
         <li>{{fila.tarea}} :</li>
         <p>{{fila.descripcion}}</p>
-        <button class="btn btn-danger" value={{i}} (click)="Eliminar(i)">Delete</button>
+        <button class="btn btn-danger" value={{i}} (click)="Eliminar(i)" [disabled]="habilitar()">Delete</button>
       </ul>
     </section>
   </article>
